@@ -1,3 +1,70 @@
+.book-link {
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.18s, background 0.18s, transform 0.18s;
+}
+.book-link:active {
+  transform: scale(0.98);
+}
+/* ===== BOOKS SECTION ===== */
+.books-section {
+  margin: 64px auto 0 auto;
+  max-width: 900px;
+  padding: 32px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.books-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #e8e8ea;
+  letter-spacing: 0.01em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .book-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+/* Book card neutral style */
+.book-card {
+  background: rgba(30, 30, 32, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  padding: 28px 32px;
+  min-width: 220px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #e8e8ea;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.book-desc {
+  color: #c0c4cb;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 /* ===== MODERN VERTICAL SIDEBAR ===== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
@@ -132,28 +199,38 @@
     min-height: 0;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 0 0 var(--sidebar-radius) var(--sidebar-radius);
     box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
     z-index: 100;
     background: var(--sidebar-bg);
     backdrop-filter: var(--sidebar-blur);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
   .sidebar-wrapper {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100vw;
     height: 56px;
-    padding: 0;
+    padding: 0 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
   .sidebar-list {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1.2rem;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+    justify-content: flex-start;
+    width: auto;
     padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
   .sidebar-link {
     padding: 8px 12px;
@@ -162,6 +239,7 @@
     display: flex;
     align-items: center;
     border-left: none;
+    white-space: nowrap;
   }
   .sidebar-link.active::after, .sidebar-link[aria-current="page"]::after {
     margin-left: 6px;
