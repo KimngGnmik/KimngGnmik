@@ -121,14 +121,52 @@
 
 @media (max-width: 820px) {
   :root {
-    --sidebar-width: 90px;
-    --sidebar-collapsed: 36px;
+    --sidebar-width: 100vw;
+  }
+  .vertical-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56px;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 var(--sidebar-radius) var(--sidebar-radius);
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+    z-index: 100;
+    background: var(--sidebar-bg);
+    backdrop-filter: var(--sidebar-blur);
+  }
+  .sidebar-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 56px;
+    padding: 0;
   }
   .sidebar-list {
     flex-direction: row;
-    gap: 0.5rem;
-    padding: 0 0 0 8px;
+    gap: 1.5rem;
     align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .sidebar-link {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    display: flex;
+    align-items: center;
+    border-left: none;
+  }
+  .sidebar-link.active::after, .sidebar-link[aria-current="page"]::after {
+    margin-left: 6px;
+    width: 0.7em;
+    height: 0.7em;
   }
   .main-content {
     margin-left: 0;
