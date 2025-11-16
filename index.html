@@ -8,96 +8,110 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  
+    <div class="main-content">
 
-  <!-- =============== ABOUT =============== -->
-  <section id="about" class="hero">
-    <div class="hero-wrap">
-        <figure class="hero-media">
-            <img src="./images/profile.jpg" alt="Siddhanta Shrestha"/>
-            <p class="muted">B.S. and M.S. in Computer Engineering, University of Massachusetts Amherst</p>
-            <div class="contact-icons" aria-label="Contact links">
-                <a class="icon-btn mail" href="mailto:siddhantashrestha.ss@gmail.com" title="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a class="icon-btn linkedin" href="https://www.linkedin.com/in/siddhantashrestha/" title="LinkedIn" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
-        </figure>
-      
-        <div class="hero-copy">
-          <h2 class="name">Siddhanta Shrestha ｜ सिद्धान्त श्रेष्ठ</h2>
-          <div class="line"></div>
+        <!-- ===============SIDEBAR =============== -->
+       
 
-          <p class="para">
-              I'm a Controls Engineer fascinated by the intersection of physics, software, and intelligent systems. 
-              At Caterpillar, I design and validate embedded control systems for heavy machinery, working across the full 
-              development lifecycle—from Simulink model design and software integration to rigorous bench testing. 
-              My work focuses on creating robust control architectures that adapt to uncertainty while maintaining reliability.
-          </p>
+        <!-- =============== MODERN SIDEBAR =============== -->
+        <aside class="vertical-sidebar">
+            <nav class="sidebar-nav">
+                <header class="sidebar-header"></header>
+                <section class="sidebar-wrapper">
+                    <ul class="sidebar-list">
+                        <li><a class="sidebar-link" href="#about">About Me</a></li>
+                        <li><a class="sidebar-link" href="#skills">Skills</a></li>
+                        <li><a class="sidebar-link" href="#projects">Projects</a></li>
+                        <li><a class="sidebar-link" href="#contact">Contact</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </aside>
 
-          <p class="para">
-              With a foundation in Computer Engineering from UMass Amherst (B.S. and M.S.), I’ve developed expertise in 
-              embedded systems and real-time software, driven by the challenge of connecting theoretical principles to 
-              real-world impact. This mindset extends to my work mentoring the FTC robotics team 
-              <em>Fast but not Furious (FBNF)</em>, where I guide students through trajectory planning, debugging, and 
-              systems integration.
-          </p>
+        <div class="main-content">
 
-          <p class="para">
-              What drives me is the belief that today’s control engineering challenges—whether in machinery, robotics, 
-              or future space systems—are built on the same principles of intelligent adaptation and dependable performance. 
-              I’m particularly passionate about closed-loop and adaptive control systems, and I see them as key technologies 
-              that will push the boundaries of what’s possible—from Earth to space.
-          </p>
+            <!-- =============== ABOUT =============== -->
+            <section id="about" class="hero">
+                <div class="hero-wrap">
+                    <figure class="hero-media">
+                        <img src="./images/profile.jpg" alt="Siddhanta Shrestha">
+                        <p class="muted">B.S. and M.S. in Computer Engineering, University of Massachusetts Amherst</p>
+                        <div class="contact-icons" aria-label="Contact links">
+                            <a class="icon-btn mail" href="mailto:siddhantashrestha.ss@gmail.com" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a class="icon-btn linkedin" href="https://www.linkedin.com/in/siddhantashrestha/" title="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="hero-copy">
+                        <h2 class="name">Siddhanta Shrestha ｜ सिद्धान्त श्रेष्ठ</h2>
+                        <div class="line"></div>
+                        <p class="para">
+                                I'm a Controls Engineer fascinated by the intersection of physics, software, and intelligent systems. 
+                                At Caterpillar, I design and validate embedded control systems for heavy machinery, working across the full 
+                                development lifecycle—from Simulink model design and software integration to rigorous bench testing. 
+                                My work focuses on creating robust control architectures that adapt to uncertainty while maintaining reliability.
+                        </p>
+                        <p class="para">
+                                With a foundation in Computer Engineering from UMass Amherst (B.S. and M.S.), I’ve developed expertise in 
+                                embedded systems and real-time software, driven by the challenge of connecting theoretical principles to 
+                                real-world impact. This mindset extends to my work mentoring the FTC robotics team 
+                                <em>Fast but not Furious (FBNF)</em>, where I guide students through trajectory planning, debugging, and 
+                                systems integration.
+                        </p>
+                        <p class="para">
+                                What drives me is the belief that today’s control engineering challenges—whether in machinery, robotics, 
+                                or future space systems—are built on the same principles of intelligent adaptation and dependable performance. 
+                                I’m particularly passionate about closed-loop and adaptive control systems, and I see them as key technologies 
+                                that will push the boundaries of what’s possible—from Earth to space.
+                        </p>
+                    </div>
+                    <!-- NEW: full-width skills block spanning both columns -->
+                    <div class="skills-blade skills-wide" aria-label="Key skills">
+                            <h3 class="eyebrow" style="text-align:center;">Technical Expertise &amp; Tools</h3>
+                            <div class="skills-grid">
+                                    <div class="skill-group">
+                                            <h4>Control Systems Development</h4>
+                                            <ul>
+                                            <li><span class="hl">MATLAB/Simulink:</span> Model-based design for TTT control systems</li>
+                                            <li><span class="hl">Python:</span> Test automation and data processing pipelines</li>
+                                            <li><span class="hl">AUTOSAR:</span> ECU software architecture and integration</li>
+                                            <li><span class="hl">Vector CANape:</span> ECU calibration and diagnostics</li>
+                                            </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                            <h4>Systems &amp; Software</h4>
+                                            <ul>
+                                            <li><span class="hl">C/C++:</span> Real-time embedded systems programming</li>
+                                            <li><span class="hl">HIL/SIL Testing:</span> Validation frameworks for safety-critical systems</li>
+                                            <li><span class="hl">Git:</span> Version control and collaborative development</li>
+                                            <li><span class="hl">Verilog:</span> Digital system design and FPGA programming</li>
+                                            </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                            <h4>Core Competencies</h4>
+                                            <ul>
+                                            <li>Embedded &amp; Real-Time Systems Architecture</li>
+                                            <li>Control System Design &amp; Implementation</li>
+                                            <li>Hardware-Software Integration</li>
+                                            <li>Safety-Critical System Validation</li>
+                                            </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                            <h4>Expanding Expertise</h4>
+                                            <ul>
+                                            <li><span class="hl">Advanced Control Theory:</span> Adaptive and robust control systems</li>
+                                            <li><span class="hl">Space Systems:</span> Attitude control and life support systems</li>
+                                            <li><span class="hl">PCB Design:</span> Custom hardware development</li>
+                                            <li><span class="hl">Applied Physics:</span> System modeling and simulation</li>
+                                            </ul>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
-        <!-- NEW: full-width skills block spanning both columns -->
-        <div class="skills-blade skills-wide" aria-label="Key skills">
-            <h3 class="eyebrow" style="text-align:center;">Technical Expertise & Tools</h3>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4>Control Systems Development</h4>
-                    <ul>
-                    <li><span class="hl">MATLAB/Simulink:</span> Model-based design for TTT control systems</li>
-                    <li><span class="hl">Python:</span> Test automation and data processing pipelines</li>
-                    <li><span class="hl">AUTOSAR:</span> ECU software architecture and integration</li>
-                    <li><span class="hl">Vector CANape:</span> ECU calibration and diagnostics</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h4>Systems & Software</h4>
-                    <ul>
-                    <li><span class="hl">C/C++:</span> Real-time embedded systems programming</li>
-                    <li><span class="hl">HIL/SIL Testing:</span> Validation frameworks for safety-critical systems</li>
-                    <li><span class="hl">Git:</span> Version control and collaborative development</li>
-                    <li><span class="hl">Verilog:</span> Digital system design and FPGA programming</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h4>Core Competencies</h4>
-                    <ul>
-                    <li>Embedded & Real-Time Systems Architecture</li>
-                    <li>Control System Design & Implementation</li>
-                    <li>Hardware-Software Integration</li>
-                    <li>Safety-Critical System Validation</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h4>Expanding Expertise</h4>
-                    <ul>
-                    <li><span class="hl">Advanced Control Theory:</span> Adaptive and robust control systems</li>
-                    <li><span class="hl">Space Systems:</span> Attitude control and life support systems</li>
-                    <li><span class="hl">PCB Design:</span> Custom hardware development</li>
-                    <li><span class="hl">Applied Physics:</span> System modeling and simulation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
 
-  
-
-</body>
-</html>
