@@ -1,4 +1,9 @@
 /* Center profile image container */
+
+.hero-media {
+  margin-top: 95px;
+}
+
 .profile-image-container {
   display: flex;
   justify-content: center;
